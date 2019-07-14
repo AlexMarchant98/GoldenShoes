@@ -1,0 +1,665 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D42F088F22DB099F0065B5E6 /* Shoes.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D42F088E22DB099F0065B5E6 /* Shoes.xcassets */; };
+		D42F089522DB148B0065B5E6 /* ViewProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42F089422DB148B0065B5E6 /* ViewProductViewController.swift */; };
+		D432DA4922D9FCA200669246 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D432DA4822D9FCA200669246 /* AppDelegate.swift */; };
+		D432DA4E22D9FCA200669246 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D432DA4C22D9FCA200669246 /* Main.storyboard */; };
+		D432DA5122D9FCA200669246 /* GoldenShoes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D432DA4F22D9FCA200669246 /* GoldenShoes.xcdatamodeld */; };
+		D432DA5322D9FCA400669246 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D432DA5222D9FCA400669246 /* Assets.xcassets */; };
+		D432DA5622D9FCA400669246 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D432DA5422D9FCA400669246 /* LaunchScreen.storyboard */; };
+		D432DA5F22D9FD6E00669246 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D432DA5E22D9FD6E00669246 /* Coordinator.swift */; };
+		D432DA6122D9FD8100669246 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = D432DA6022D9FD8100669246 /* Storyboarded.swift */; };
+		D432DA6822D9FF0B00669246 /* faqs.json in Resources */ = {isa = PBXBuildFile; fileRef = D432DA6722D9FF0B00669246 /* faqs.json */; };
+		D432DA6A22D9FFB500669246 /* FAQEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = D432DA6922D9FFB500669246 /* FAQEntry.swift */; };
+		D432DA6C22DA003200669246 /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D432DA6B22DA003200669246 /* HelpViewController.swift */; };
+		D432DA6F22DA008A00669246 /* FAQViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D432DA6E22DA008A00669246 /* FAQViewController.swift */; };
+		D432DA7122DA014600669246 /* FAQDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D432DA7022DA014600669246 /* FAQDataSource.swift */; };
+		D432DA7422DA044700669246 /* String-Attributed.swift in Sources */ = {isa = PBXBuildFile; fileRef = D432DA7322DA044700669246 /* String-Attributed.swift */; };
+		D432DA7622DA069D00669246 /* BundleLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = D432DA7522DA069D00669246 /* BundleLoading.swift */; };
+		D432DA7E22DA099E00669246 /* GoldenShoesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D432DA7D22DA099E00669246 /* GoldenShoesTests.swift */; };
+		D432DA8622DA09C900669246 /* BundleLoadingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D432DA8522DA09C900669246 /* BundleLoadingTests.swift */; };
+		D432DA8822DA0BF300669246 /* FAQTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D432DA8722DA0BF300669246 /* FAQTableViewCell.swift */; };
+		D432DA8A22DA0D2E00669246 /* MainTabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D432DA8922DA0D2E00669246 /* MainTabBarCoordinator.swift */; };
+		D432DA8C22DA0D5100669246 /* HelpCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D432DA8B22DA0D5100669246 /* HelpCoordinator.swift */; };
+		D432DA8E22DA185D00669246 /* BrowseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D432DA8D22DA185D00669246 /* BrowseCoordinator.swift */; };
+		D432DA9022DA18C700669246 /* BrowseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D432DA8F22DA18C700669246 /* BrowseViewController.swift */; };
+		D432DA9422DA1E4100669246 /* HelpDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D432DA9322DA1E4100669246 /* HelpDataSource.swift */; };
+		D432DA9822DA2CCA00669246 /* ReturnsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D432DA9722DA2CCA00669246 /* ReturnsViewController.swift */; };
+		D432DA9C22DA35C900669246 /* ReturnsProcess.html in Resources */ = {isa = PBXBuildFile; fileRef = D432DA9B22DA35C900669246 /* ReturnsProcess.html */; };
+		D432DAA022DA3A0400669246 /* ReturnsTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D432DA9F22DA3A0400669246 /* ReturnsTextView.swift */; };
+		D432DAA722DA40A000669246 /* Theme.css in Resources */ = {isa = PBXBuildFile; fileRef = D432DAA622DA40A000669246 /* Theme.css */; };
+		D432DAAC22DA5A8F00669246 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = D432DAAB22DA5A8F00669246 /* Product.swift */; };
+		D432DAAE22DA5E9700669246 /* ProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D432DAAD22DA5E9700669246 /* ProductCollectionViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D432DA8022DA099E00669246 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D432DA3D22D9FCA200669246 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D432DA4422D9FCA200669246;
+			remoteInfo = GoldenShoes;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D42F088E22DB099F0065B5E6 /* Shoes.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Shoes.xcassets; sourceTree = "<group>"; };
+		D42F089422DB148B0065B5E6 /* ViewProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewProductViewController.swift; sourceTree = "<group>"; };
+		D432DA4522D9FCA200669246 /* GoldenShoes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoldenShoes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D432DA4822D9FCA200669246 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D432DA4D22D9FCA200669246 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D432DA5022D9FCA200669246 /* GoldenShoes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GoldenShoes.xcdatamodel; sourceTree = "<group>"; };
+		D432DA5222D9FCA400669246 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D432DA5522D9FCA400669246 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D432DA5722D9FCA400669246 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D432DA5E22D9FD6E00669246 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		D432DA6022D9FD8100669246 /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
+		D432DA6722D9FF0B00669246 /* faqs.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = faqs.json; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.json; };
+		D432DA6922D9FFB500669246 /* FAQEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQEntry.swift; sourceTree = "<group>"; };
+		D432DA6B22DA003200669246 /* HelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
+		D432DA6E22DA008A00669246 /* FAQViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQViewController.swift; sourceTree = "<group>"; };
+		D432DA7022DA014600669246 /* FAQDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQDataSource.swift; sourceTree = "<group>"; };
+		D432DA7322DA044700669246 /* String-Attributed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String-Attributed.swift"; sourceTree = "<group>"; };
+		D432DA7522DA069D00669246 /* BundleLoading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleLoading.swift; sourceTree = "<group>"; };
+		D432DA7B22DA099E00669246 /* GoldenShoesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoldenShoesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D432DA7D22DA099E00669246 /* GoldenShoesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoldenShoesTests.swift; sourceTree = "<group>"; };
+		D432DA7F22DA099E00669246 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D432DA8522DA09C900669246 /* BundleLoadingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleLoadingTests.swift; sourceTree = "<group>"; };
+		D432DA8722DA0BF300669246 /* FAQTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQTableViewCell.swift; sourceTree = "<group>"; };
+		D432DA8922DA0D2E00669246 /* MainTabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarCoordinator.swift; sourceTree = "<group>"; };
+		D432DA8B22DA0D5100669246 /* HelpCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpCoordinator.swift; sourceTree = "<group>"; };
+		D432DA8D22DA185D00669246 /* BrowseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseCoordinator.swift; sourceTree = "<group>"; };
+		D432DA8F22DA18C700669246 /* BrowseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseViewController.swift; sourceTree = "<group>"; };
+		D432DA9322DA1E4100669246 /* HelpDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpDataSource.swift; sourceTree = "<group>"; };
+		D432DA9722DA2CCA00669246 /* ReturnsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReturnsViewController.swift; sourceTree = "<group>"; };
+		D432DA9B22DA35C900669246 /* ReturnsProcess.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = ReturnsProcess.html; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.html; };
+		D432DA9F22DA3A0400669246 /* ReturnsTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReturnsTextView.swift; sourceTree = "<group>"; };
+		D432DAA622DA40A000669246 /* Theme.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Theme.css; sourceTree = "<group>"; };
+		D432DAAB22DA5A8F00669246 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		D432DAAD22DA5E9700669246 /* ProductCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCollectionViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D432DA4222D9FCA200669246 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D432DA7822DA099E00669246 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D432DA3C22D9FCA200669246 = {
+			isa = PBXGroup;
+			children = (
+				D432DA4722D9FCA200669246 /* GoldenShoes */,
+				D432DA7C22DA099E00669246 /* GoldenShoesTests */,
+				D432DA4622D9FCA200669246 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D432DA4622D9FCA200669246 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D432DA4522D9FCA200669246 /* GoldenShoes.app */,
+				D432DA7B22DA099E00669246 /* GoldenShoesTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D432DA4722D9FCA200669246 /* GoldenShoes */ = {
+			isa = PBXGroup;
+			children = (
+				D432DA7222DA042500669246 /* Extensions */,
+				D432DA6622D9FEA900669246 /* Content */,
+				D432DA6222D9FDC700669246 /* Tabs */,
+				D432DA5D22D9FD5A00669246 /* Protocols */,
+				D432DA4822D9FCA200669246 /* AppDelegate.swift */,
+				D432DA4C22D9FCA200669246 /* Main.storyboard */,
+				D432DA5422D9FCA400669246 /* LaunchScreen.storyboard */,
+				D432DA5722D9FCA400669246 /* Info.plist */,
+				D432DA4F22D9FCA200669246 /* GoldenShoes.xcdatamodeld */,
+				D432DA8922DA0D2E00669246 /* MainTabBarCoordinator.swift */,
+			);
+			path = GoldenShoes;
+			sourceTree = "<group>";
+		};
+		D432DA5D22D9FD5A00669246 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				D432DA5E22D9FD6E00669246 /* Coordinator.swift */,
+				D432DA6022D9FD8100669246 /* Storyboarded.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		D432DA6222D9FDC700669246 /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				D432DA9922DA34EB00669246 /* Stores */,
+				D432DA6522D9FE1800669246 /* Browse */,
+				D432DA6322D9FDD100669246 /* Help */,
+			);
+			path = Tabs;
+			sourceTree = "<group>";
+		};
+		D432DA6322D9FDD100669246 /* Help */ = {
+			isa = PBXGroup;
+			children = (
+				D432DA9622DA223400669246 /* Returns */,
+				D432DA6D22DA006E00669246 /* FAQs */,
+				D432DA6B22DA003200669246 /* HelpViewController.swift */,
+				D432DA8B22DA0D5100669246 /* HelpCoordinator.swift */,
+				D432DA9322DA1E4100669246 /* HelpDataSource.swift */,
+			);
+			path = Help;
+			sourceTree = "<group>";
+		};
+		D432DA6522D9FE1800669246 /* Browse */ = {
+			isa = PBXGroup;
+			children = (
+				D432DAA822DA596600669246 /* ViewProduct */,
+				D432DA8D22DA185D00669246 /* BrowseCoordinator.swift */,
+				D432DA8F22DA18C700669246 /* BrowseViewController.swift */,
+				D432DAAB22DA5A8F00669246 /* Product.swift */,
+				D432DAAD22DA5E9700669246 /* ProductCollectionViewCell.swift */,
+			);
+			path = Browse;
+			sourceTree = "<group>";
+		};
+		D432DA6622D9FEA900669246 /* Content */ = {
+			isa = PBXGroup;
+			children = (
+				D432DA9A22DA35A500669246 /* ReturnsProcess */,
+				D432DA5222D9FCA400669246 /* Assets.xcassets */,
+				D432DA6722D9FF0B00669246 /* faqs.json */,
+				D42F088E22DB099F0065B5E6 /* Shoes.xcassets */,
+			);
+			path = Content;
+			sourceTree = "<group>";
+		};
+		D432DA6D22DA006E00669246 /* FAQs */ = {
+			isa = PBXGroup;
+			children = (
+				D432DA6922D9FFB500669246 /* FAQEntry.swift */,
+				D432DA6E22DA008A00669246 /* FAQViewController.swift */,
+				D432DA7022DA014600669246 /* FAQDataSource.swift */,
+				D432DA8722DA0BF300669246 /* FAQTableViewCell.swift */,
+			);
+			path = FAQs;
+			sourceTree = "<group>";
+		};
+		D432DA7222DA042500669246 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D432DA7322DA044700669246 /* String-Attributed.swift */,
+				D432DA7522DA069D00669246 /* BundleLoading.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D432DA7C22DA099E00669246 /* GoldenShoesTests */ = {
+			isa = PBXGroup;
+			children = (
+				D432DA7D22DA099E00669246 /* GoldenShoesTests.swift */,
+				D432DA7F22DA099E00669246 /* Info.plist */,
+				D432DA8522DA09C900669246 /* BundleLoadingTests.swift */,
+			);
+			path = GoldenShoesTests;
+			sourceTree = "<group>";
+		};
+		D432DA9622DA223400669246 /* Returns */ = {
+			isa = PBXGroup;
+			children = (
+				D432DA9722DA2CCA00669246 /* ReturnsViewController.swift */,
+				D432DA9F22DA3A0400669246 /* ReturnsTextView.swift */,
+			);
+			path = Returns;
+			sourceTree = "<group>";
+		};
+		D432DA9922DA34EB00669246 /* Stores */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Stores;
+			sourceTree = "<group>";
+		};
+		D432DA9A22DA35A500669246 /* ReturnsProcess */ = {
+			isa = PBXGroup;
+			children = (
+				D432DAA622DA40A000669246 /* Theme.css */,
+				D432DA9B22DA35C900669246 /* ReturnsProcess.html */,
+			);
+			path = ReturnsProcess;
+			sourceTree = "<group>";
+		};
+		D432DAA822DA596600669246 /* ViewProduct */ = {
+			isa = PBXGroup;
+			children = (
+				D42F089422DB148B0065B5E6 /* ViewProductViewController.swift */,
+			);
+			path = ViewProduct;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D432DA4422D9FCA200669246 /* GoldenShoes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D432DA5A22D9FCA400669246 /* Build configuration list for PBXNativeTarget "GoldenShoes" */;
+			buildPhases = (
+				D432DA4122D9FCA200669246 /* Sources */,
+				D432DA4222D9FCA200669246 /* Frameworks */,
+				D432DA4322D9FCA200669246 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GoldenShoes;
+			productName = GoldenShoes;
+			productReference = D432DA4522D9FCA200669246 /* GoldenShoes.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D432DA7A22DA099E00669246 /* GoldenShoesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D432DA8222DA099E00669246 /* Build configuration list for PBXNativeTarget "GoldenShoesTests" */;
+			buildPhases = (
+				D432DA7722DA099E00669246 /* Sources */,
+				D432DA7822DA099E00669246 /* Frameworks */,
+				D432DA7922DA099E00669246 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D432DA8122DA099E00669246 /* PBXTargetDependency */,
+			);
+			name = GoldenShoesTests;
+			productName = GoldenShoesTests;
+			productReference = D432DA7B22DA099E00669246 /* GoldenShoesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D432DA3D22D9FCA200669246 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Alex Marchant";
+				TargetAttributes = {
+					D432DA4422D9FCA200669246 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					D432DA7A22DA099E00669246 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = D432DA4422D9FCA200669246;
+					};
+				};
+			};
+			buildConfigurationList = D432DA4022D9FCA200669246 /* Build configuration list for PBXProject "GoldenShoes" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D432DA3C22D9FCA200669246;
+			productRefGroup = D432DA4622D9FCA200669246 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D432DA4422D9FCA200669246 /* GoldenShoes */,
+				D432DA7A22DA099E00669246 /* GoldenShoesTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D432DA4322D9FCA200669246 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D42F088F22DB099F0065B5E6 /* Shoes.xcassets in Resources */,
+				D432DA6822D9FF0B00669246 /* faqs.json in Resources */,
+				D432DAA722DA40A000669246 /* Theme.css in Resources */,
+				D432DA5622D9FCA400669246 /* LaunchScreen.storyboard in Resources */,
+				D432DA9C22DA35C900669246 /* ReturnsProcess.html in Resources */,
+				D432DA5322D9FCA400669246 /* Assets.xcassets in Resources */,
+				D432DA4E22D9FCA200669246 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D432DA7922DA099E00669246 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D432DA4122D9FCA200669246 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D432DAA022DA3A0400669246 /* ReturnsTextView.swift in Sources */,
+				D432DA8C22DA0D5100669246 /* HelpCoordinator.swift in Sources */,
+				D432DA5F22D9FD6E00669246 /* Coordinator.swift in Sources */,
+				D432DA7422DA044700669246 /* String-Attributed.swift in Sources */,
+				D432DA9422DA1E4100669246 /* HelpDataSource.swift in Sources */,
+				D432DA7622DA069D00669246 /* BundleLoading.swift in Sources */,
+				D432DA8E22DA185D00669246 /* BrowseCoordinator.swift in Sources */,
+				D432DA8A22DA0D2E00669246 /* MainTabBarCoordinator.swift in Sources */,
+				D432DA7122DA014600669246 /* FAQDataSource.swift in Sources */,
+				D432DA6C22DA003200669246 /* HelpViewController.swift in Sources */,
+				D432DA6A22D9FFB500669246 /* FAQEntry.swift in Sources */,
+				D432DA9022DA18C700669246 /* BrowseViewController.swift in Sources */,
+				D432DA8822DA0BF300669246 /* FAQTableViewCell.swift in Sources */,
+				D432DA9822DA2CCA00669246 /* ReturnsViewController.swift in Sources */,
+				D432DA5122D9FCA200669246 /* GoldenShoes.xcdatamodeld in Sources */,
+				D432DAAE22DA5E9700669246 /* ProductCollectionViewCell.swift in Sources */,
+				D432DA6F22DA008A00669246 /* FAQViewController.swift in Sources */,
+				D432DAAC22DA5A8F00669246 /* Product.swift in Sources */,
+				D42F089522DB148B0065B5E6 /* ViewProductViewController.swift in Sources */,
+				D432DA6122D9FD8100669246 /* Storyboarded.swift in Sources */,
+				D432DA4922D9FCA200669246 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D432DA7722DA099E00669246 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D432DA8622DA09C900669246 /* BundleLoadingTests.swift in Sources */,
+				D432DA7E22DA099E00669246 /* GoldenShoesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D432DA8122DA099E00669246 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D432DA4422D9FCA200669246 /* GoldenShoes */;
+			targetProxy = D432DA8022DA099E00669246 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D432DA4C22D9FCA200669246 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D432DA4D22D9FCA200669246 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D432DA5422D9FCA400669246 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D432DA5522D9FCA400669246 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D432DA5822D9FCA400669246 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D432DA5922D9FCA400669246 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D432DA5B22D9FCA400669246 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5D6D89YR6P;
+				INFOPLIST_FILE = GoldenShoes/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Alex-Marchant.GoldenShoes";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D432DA5C22D9FCA400669246 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5D6D89YR6P;
+				INFOPLIST_FILE = GoldenShoes/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Alex-Marchant.GoldenShoes";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D432DA8322DA099E00669246 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5D6D89YR6P;
+				INFOPLIST_FILE = GoldenShoesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Alex-Marchant.GoldenShoesTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoldenShoes.app/GoldenShoes";
+			};
+			name = Debug;
+		};
+		D432DA8422DA099E00669246 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5D6D89YR6P;
+				INFOPLIST_FILE = GoldenShoesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Alex-Marchant.GoldenShoesTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoldenShoes.app/GoldenShoes";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D432DA4022D9FCA200669246 /* Build configuration list for PBXProject "GoldenShoes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D432DA5822D9FCA400669246 /* Debug */,
+				D432DA5922D9FCA400669246 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D432DA5A22D9FCA400669246 /* Build configuration list for PBXNativeTarget "GoldenShoes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D432DA5B22D9FCA400669246 /* Debug */,
+				D432DA5C22D9FCA400669246 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D432DA8222DA099E00669246 /* Build configuration list for PBXNativeTarget "GoldenShoesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D432DA8322DA099E00669246 /* Debug */,
+				D432DA8422DA099E00669246 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D432DA4F22D9FCA200669246 /* GoldenShoes.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D432DA5022D9FCA200669246 /* GoldenShoes.xcdatamodel */,
+			);
+			currentVersion = D432DA5022D9FCA200669246 /* GoldenShoes.xcdatamodel */;
+			path = GoldenShoes.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D432DA3D22D9FCA200669246 /* Project object */;
+}
