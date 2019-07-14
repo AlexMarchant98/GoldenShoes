@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D42F088F22DB099F0065B5E6 /* Shoes.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D42F088E22DB099F0065B5E6 /* Shoes.xcassets */; };
 		D42F089522DB148B0065B5E6 /* ViewProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42F089422DB148B0065B5E6 /* ViewProductViewController.swift */; };
+		D42F089722DB3AED0065B5E6 /* ViewProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42F089622DB3AED0065B5E6 /* ViewProductCollectionViewCell.swift */; };
+		D42F089922DB48E30065B5E6 /* Shoes.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D42F089822DB48E30065B5E6 /* Shoes.xcassets */; };
 		D432DA4922D9FCA200669246 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D432DA4822D9FCA200669246 /* AppDelegate.swift */; };
 		D432DA4E22D9FCA200669246 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D432DA4C22D9FCA200669246 /* Main.storyboard */; };
 		D432DA5122D9FCA200669246 /* GoldenShoes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D432DA4F22D9FCA200669246 /* GoldenShoes.xcdatamodeld */; };
@@ -37,6 +38,7 @@
 		D432DAA722DA40A000669246 /* Theme.css in Resources */ = {isa = PBXBuildFile; fileRef = D432DAA622DA40A000669246 /* Theme.css */; };
 		D432DAAC22DA5A8F00669246 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = D432DAAB22DA5A8F00669246 /* Product.swift */; };
 		D432DAAE22DA5E9700669246 /* ProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D432DAAD22DA5E9700669246 /* ProductCollectionViewCell.swift */; };
+		D4795FDA22DB60E600200496 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4795FD922DB60E600200496 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,8 +52,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D42F088E22DB099F0065B5E6 /* Shoes.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Shoes.xcassets; sourceTree = "<group>"; };
 		D42F089422DB148B0065B5E6 /* ViewProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewProductViewController.swift; sourceTree = "<group>"; };
+		D42F089622DB3AED0065B5E6 /* ViewProductCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewProductCollectionViewCell.swift; sourceTree = "<group>"; };
+		D42F089822DB48E30065B5E6 /* Shoes.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Shoes.xcassets; sourceTree = "<group>"; };
 		D432DA4522D9FCA200669246 /* GoldenShoes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoldenShoes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D432DA4822D9FCA200669246 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D432DA4D22D9FCA200669246 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -84,6 +87,7 @@
 		D432DAA622DA40A000669246 /* Theme.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Theme.css; sourceTree = "<group>"; };
 		D432DAAB22DA5A8F00669246 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		D432DAAD22DA5E9700669246 /* ProductCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCollectionViewCell.swift; sourceTree = "<group>"; };
+		D4795FD922DB60E600200496 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +129,7 @@
 		D432DA4722D9FCA200669246 /* GoldenShoes */ = {
 			isa = PBXGroup;
 			children = (
+				D4795FD822DB609400200496 /* Reusables */,
 				D432DA7222DA042500669246 /* Extensions */,
 				D432DA6622D9FEA900669246 /* Content */,
 				D432DA6222D9FDC700669246 /* Tabs */,
@@ -185,10 +190,10 @@
 		D432DA6622D9FEA900669246 /* Content */ = {
 			isa = PBXGroup;
 			children = (
+				D42F089822DB48E30065B5E6 /* Shoes.xcassets */,
 				D432DA9A22DA35A500669246 /* ReturnsProcess */,
 				D432DA5222D9FCA400669246 /* Assets.xcassets */,
 				D432DA6722D9FF0B00669246 /* faqs.json */,
-				D42F088E22DB099F0065B5E6 /* Shoes.xcassets */,
 			);
 			path = Content;
 			sourceTree = "<group>";
@@ -252,8 +257,17 @@
 			isa = PBXGroup;
 			children = (
 				D42F089422DB148B0065B5E6 /* ViewProductViewController.swift */,
+				D42F089622DB3AED0065B5E6 /* ViewProductCollectionViewCell.swift */,
 			);
 			path = ViewProduct;
+			sourceTree = "<group>";
+		};
+		D4795FD822DB609400200496 /* Reusables */ = {
+			isa = PBXGroup;
+			children = (
+				D4795FD922DB60E600200496 /* Constants.swift */,
+			);
+			path = Reusables;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -337,7 +351,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D42F088F22DB099F0065B5E6 /* Shoes.xcassets in Resources */,
+				D42F089922DB48E30065B5E6 /* Shoes.xcassets in Resources */,
 				D432DA6822D9FF0B00669246 /* faqs.json in Resources */,
 				D432DAA722DA40A000669246 /* Theme.css in Resources */,
 				D432DA5622D9FCA400669246 /* LaunchScreen.storyboard in Resources */,
@@ -367,9 +381,11 @@
 				D432DA7422DA044700669246 /* String-Attributed.swift in Sources */,
 				D432DA9422DA1E4100669246 /* HelpDataSource.swift in Sources */,
 				D432DA7622DA069D00669246 /* BundleLoading.swift in Sources */,
+				D4795FDA22DB60E600200496 /* Constants.swift in Sources */,
 				D432DA8E22DA185D00669246 /* BrowseCoordinator.swift in Sources */,
 				D432DA8A22DA0D2E00669246 /* MainTabBarCoordinator.swift in Sources */,
 				D432DA7122DA014600669246 /* FAQDataSource.swift in Sources */,
+				D42F089722DB3AED0065B5E6 /* ViewProductCollectionViewCell.swift in Sources */,
 				D432DA6C22DA003200669246 /* HelpViewController.swift in Sources */,
 				D432DA6A22D9FFB500669246 /* FAQEntry.swift in Sources */,
 				D432DA9022DA18C700669246 /* BrowseViewController.swift in Sources */,

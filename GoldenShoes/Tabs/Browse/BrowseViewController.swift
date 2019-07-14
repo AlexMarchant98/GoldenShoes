@@ -51,3 +51,12 @@ extension BrowseViewController: UICollectionViewDelegate {
         coordinator?.showViewProduct(selectedProduct: products[indexPath.item])
     }
 }
+
+extension BrowseViewController: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let padding: CGFloat =  20
+        let collectionViewSize = collectionView.frame.size.width - padding
+        
+        return CGSize(width: collectionViewSize/2, height: 260)
+    }
+}

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MessageUI
 
 class HelpViewController: UITableViewController, Storyboarded {
     
@@ -23,7 +24,15 @@ class HelpViewController: UITableViewController, Storyboarded {
     }
     
     @objc func showEmail() {
-        coordinator?.showEmail()
+        if MFMailComposeViewController.canSendMail() {
+            let vc = MFMailComposeViewController()
+            
+            vc.mailComposeDelegate = self
+            
+            vc.setToRecipients(["support@goldenshoe.co.uk"])
+            
+            self.present(vc, animated: true, completion: nil)
+        }
     }
     
     /// When the Share Score cell is tapped start the share score process, otherwise do nothing.
@@ -33,7 +42,7 @@ class HelpViewController: UITableViewController, Storyboarded {
         let facebookPath = IndexPath(row: 0, section: 1)
         let twitterPath = IndexPath(row: 1, section: 1)
         let linkedInPath = IndexPath(row: 2, section: 1)
-        let emailPath = IndexPath(row: 3, section: 1)
+        let emailPath = IndexPath(row: 0, section: 2)
         
         
         switch indexPath {
@@ -48,7 +57,15 @@ class HelpViewController: UITableViewController, Storyboarded {
         case linkedInPath:
             coordinator?.showLinkedIn()
         case emailPath:
-            coordinator?.showEmail()
+            if MFMailComposeViewController.canSendMail() {
+                let vc = MFMailComposeViewController()
+                
+                vc.mailComposeDelegate = self
+                
+                vc.setToRecipients(["support@goldenshoe.co.uk"])
+                
+                self.present(vc, animated: true, completion: nil)
+            }
         default:
             print("Do nothing")
         }
@@ -67,4 +84,10 @@ class HelpViewController: UITableViewController, Storyboarded {
     }
     */
 
+}
+
+extension HelpViewController: MFMailComposeViewControllerDelegate {
+    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
+        controller.dismiss(animated: true)
+    }
 }

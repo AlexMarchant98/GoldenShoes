@@ -1,14 +1,22 @@
 [
     {
         "question": "How long do deliveries take?",
-        "answer": "It depends on the type of delivery you have chosen: Normal is 3-5 business days, premium is 2-3 business days and next day is the day after delivery on orders before 8pm UTC."
+        "answer": "It depends on the type of delivery you have chosen: Normal is 3-5 business days, premium is 2-3 business days and next day is the day after delivery on orders before 8PM UTC."
     },
     {
-        "question": "What time will my delviery turn up?",
+        "question": "What time will my delivery turn up?",
         "answer": "We have no control over the time of delivery, when you order an item you will be emailed a link by Royal Mail to track your item; this will give you updates on expected delivery times and the current status of your package."
     },
     {
         "question": "Can I request delivery on a particular date?",
         "answer": "Not at the moment"
+    },
+    {
+        "question": "How can I get into contact with Golden Shoes for more help?",
+        "answer": "You can email us via the app, you can find this on the 'Help' tab, or you can call us on +44 0800 123 456."
+    },
+    {
+        "question": "I called but nobody answered?",
+        "answer": "Our helpline is only active between 9PM-5PM Monday-Friday, please send us an email or call us during open hours."
     }
 ]

@@ -11,7 +11,7 @@ import UIKit
 class HelpDataSource: NSObject, UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 2
+        return 3
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
@@ -19,8 +19,9 @@ class HelpDataSource: NSObject, UITableViewDataSource {
         case 0:
             return nil
         case 1:
-            return "CONTACT US"
-            
+            return "CONNECT WITH US"
+        case 2:
+            return nil
         default:
             fatalError("Unknown table view section: \(section).")
         }
@@ -33,8 +34,12 @@ class HelpDataSource: NSObject, UITableViewDataSource {
             return 2
             
         case 1:
-            // Contact Us
-            return 4
+            // Connect with us
+            return 3
+        
+        case 2:
+            // Email us
+            return 1
             
         default:
             fatalError("Unknown table view section: \(section).")
@@ -61,11 +66,11 @@ class HelpDataSource: NSObject, UITableViewDataSource {
                 return createTwitter(in: tableView, indexPath: indexPath)
             case 2:
                 return createLinkedIn(in: tableView, indexPath: indexPath)
-            case 3:
-                return createEmail(in: tableView, indexPath: indexPath)
             default:
                 fatalError("Unknown index path: \(indexPath).")
             }
+        case 2:
+            return createEmail(in: tableView, indexPath: indexPath)
             
         default:
             fatalError("Unknown index path: \(indexPath).")
@@ -95,7 +100,6 @@ class HelpDataSource: NSObject, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Facebook", for: indexPath)
         cell.textLabel?.text = "Facebook"
         ///cell.imageView?.image = UIImage(named: "Facebook")
-        cell.accessoryType = .disclosureIndicator
         
         return cell
     }
@@ -104,7 +108,6 @@ class HelpDataSource: NSObject, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Twitter", for: indexPath)
         cell.textLabel?.text = "Twitter"
         ///cell.imageView?.image = UIImage(named: "Twitter")
-        cell.accessoryType = .disclosureIndicator
         
         return cell
     }
@@ -113,7 +116,6 @@ class HelpDataSource: NSObject, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "LinkedIn", for: indexPath)
         cell.textLabel?.text = "Linked In"
         ///cell.imageView?.image = UIImage(named: "LinkedIn")
-        cell.accessoryType = .disclosureIndicator
         
         return cell
     }

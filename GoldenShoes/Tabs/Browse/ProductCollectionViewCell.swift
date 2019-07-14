@@ -23,7 +23,7 @@ class ProductCollectionViewCell: UICollectionViewCell {
         if let currentProduct = self.product {
             name.text = currentProduct.name
             price.text = currentProduct.price
-            image.image = currentProduct.image
+            image.image = currentProduct.images.first
         } else {
             name.text = "Add Product"
             price.text = "£0.99"

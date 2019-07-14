@@ -15,9 +15,9 @@ class HelpCoordinator: Coordinator {
     
     init() {
         self.navigationController = UINavigationController()
+        self.navigationController.tabBarItem = UITabBarItem(title: "Help", image: UIImage(named: "Help"), tag: 0)
         
         let viewController = HelpViewController.instantiate()
-        viewController.tabBarItem = UITabBarItem(title: "Help", image: nil, tag: 1)
         viewController.coordinator = self
         
         navigationController.viewControllers = [viewController]
@@ -54,16 +54,6 @@ class HelpCoordinator: Coordinator {
             UIApplication.shared.open(URL(string: "linkedin.com/in/alex-marchant-077974137")!, options: [:])
         } else {
             UIApplication.shared.open(URL(string: "https://www.linkedin.com/in/alex-marchant-077974137")!, options: [:])
-        }
-    }
-    
-    func showEmail() {
-        if MFMailComposeViewController.canSendMail() {
-            let vc = MFMailComposeViewController()
-            
-            vc.setToRecipients(["support@goldenshoe.co.uk"])
-            
-            navigationController.pushViewController(vc, animated: true)
         }
     }
 }

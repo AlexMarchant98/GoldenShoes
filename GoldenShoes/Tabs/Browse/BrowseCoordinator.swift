@@ -14,9 +14,9 @@ class BrowseCoordinator: Coordinator {
     init() {
         self.navigationController = UINavigationController()
         self.navigationController.setNavigationBarHidden(true, animated: false)
+        self.navigationController.tabBarItem = UITabBarItem(tabBarSystemItem: UITabBarItem.SystemItem.search, tag: 0)
         
         let viewController = BrowseViewController.instantiate()
-        viewController.tabBarItem = UITabBarItem(title: "Browse", image: nil, tag: 0)
         viewController.coordinator = self
         
         navigationController.viewControllers = [viewController]
